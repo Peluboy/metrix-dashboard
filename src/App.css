@@ -19,8 +19,8 @@
   --success-clr: #519c66;
   --error-clr: #cc5f5f;
   --label-clr: #a6a8b1;
-  --font-family: "Poppins", sans-serif;
-  --transition-default: all 300ms ease-in-out;
+  --font-family: "Inter", sans-serif;
+  --transition-default: all 100ms ease-in-out;
 }
 
 body {
@@ -33,23 +33,21 @@ ul {
 a {
   color: unset;
   text-decoration: none;
-  color: var(--clr-white);
+  /* color: var(--clr-white); */
 }
+
 button {
   background-color: transparent;
   border: none;
   cursor: pointer;
 }
 
-.img-fit-cover img {
+.contact-img img {
   width: 100%;
   height: 100%;
   object-fit: cover;
 }
 
-.text-white {
-  color: var(--clr-white);
-}
 .text-silver-v1 {
   color: var(--clr-silver-v1);
 }
@@ -67,7 +65,15 @@ button {
   font-size: 14px;
 }
 
-.app {
+.text-hr {
+  font-size: 1.3rem;
+}
+
+.text-header {
+  font-size: 1.3rem;
+}
+
+.layout {
   display: flex;
   min-height: 100vh;
 }

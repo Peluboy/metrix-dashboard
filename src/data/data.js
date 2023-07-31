@@ -2,14 +2,31 @@ import { iconsImgs } from "../utils/images";
 import { personsImgs } from "../utils/images";
 
 export const navigationLinks = [
-  { id: 1, title: "Dashboard", image: iconsImgs.category },
-  { id: 2, title: "Orders", image: iconsImgs.bag },
-  { id: 3, title: "Customers", image: iconsImgs.user },
-  { id: 4, title: "Inventory", image: iconsImgs.folder },
-  { id: 5, title: "Conversations", image: iconsImgs.chat },
-  { id: 6, title: "Settings", image: iconsImgs.setting },
-  { id: 7, title: "Contact Support", image: iconsImgs.headphone },
-  { id: 8, title: "Logout", image: iconsImgs.logout },
+  { id: 1, title: "Dashboard", image: iconsImgs.category, route: "/" },
+  {
+    id: 2,
+    title: "Orders",
+    image: iconsImgs.bag,
+    route: "/orders",
+    messageCount: 3,
+  },
+  { id: 3, title: "Customers", image: iconsImgs.user, route: "/customers" },
+  { id: 4, title: "Inventory", image: iconsImgs.folder, route: "/inventory" },
+  {
+    id: 5,
+    title: "Conversations",
+    image: iconsImgs.chat,
+    route: "/conversation",
+    messageCount: 5,
+  },
+  { id: 6, title: "Settings", image: iconsImgs.setting, route: "/settings" },
+  {
+    id: 7,
+    title: "Contact Support",
+    image: iconsImgs.headphone,
+    route: "/support",
+  },
+  { id: 8, title: "Logout", image: iconsImgs.logout, route: "/logout" },
 ];
 
 export const contacts = [

@@ -1,0 +1,105 @@
+.navbar {
+  background-color: var(--white-clr);
+  /* padding: 14px 32px; */
+}
+
+.navbar-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1.5px solid #f1f3f9;
+  /* padding-bottom: 14px; */
+  padding: 14px 32px;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.top-left .sidebar-toggler {
+  width: 12px;
+  filter: invert(30);
+}
+
+.top-right {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.dropdown {
+  position: relative;
+  width: 140px;
+  height: 30px;
+}
+
+.dropdown::before {
+  content: "";
+  position: absolute;
+  right: 20px;
+  top: 10px;
+  z-index: 1000;
+  width: 5px;
+  height: 5px;
+  border: 1.5px solid #333;
+  border-top: 1.5px solid #fff;
+  border-right: 1.5px solid #fff;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.dropdown input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 140px;
+  padding: 5px 10px;
+  height: 30px;
+  outline: none;
+  border: none;
+  border-radius: 8px;
+  background-color: #fef5ea;
+  cursor: pointer;
+}
+
+.dropdown .option {
+  position: absolute;
+  border-radius: 8px;
+  top: 45px;
+  width: 100%;
+  background-color: #fff;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: none;
+}
+
+.dropdown .option div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.dropdown .option div:hover {
+  background-color: var(--primary-clr);
+  color: #fff;
+}
+
+.dropdown .option.open {
+  display: block;
+}
+
+.navbar-profile-pic {
+  height: 32px;
+  width: 32px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.navbar-bottom .breadcrum {
+  color: var(--gray-200-clr);
+  display: flex;
+  column-gap: 10px;
+  padding: 8px 32px;
+}

@@ -13,8 +13,9 @@ import cart from "../assets/icons/fi_shopping-cart.svg";
 import graph from "../assets/icons/Graph.svg";
 import notification from "../assets/icons/Notification.svg";
 import home from "../assets/icons/Home.svg";
+import menu from "../assets/icons/menu.svg";
 
-// person images
+// contact images
 import person_one from "../assets/images/person_one.jpg";
 import person_two from "../assets/images/person_two.jpg";
 import person_three from "../assets/images/person_three.jpg";
@@ -33,6 +34,7 @@ export const iconsImgs = {
   folder,
   graph,
   logo,
+  menu,
   logout,
   setting,
   category,
