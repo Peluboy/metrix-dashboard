@@ -16,7 +16,7 @@ export const navigationLinks = [
     id: 5,
     title: "Conversations",
     image: iconsImgs.chat,
-    route: "/conversation",
+    route: "/conversations",
     messageCount: 5,
   },
   { id: 6, title: "Settings", image: iconsImgs.setting, route: "/settings" },
@@ -78,7 +78,7 @@ export const summaryData = [
   {
     id: 15,
     month: "Sept 10",
-    value: 90,
+    value: 55,
   },
   {
     id: 16,
@@ -88,7 +88,7 @@ export const summaryData = [
   {
     id: 17,
     month: "Sept 12",
-    value: 62,
+    value: 42,
   },
   {
     id: 18,
@@ -98,7 +98,7 @@ export const summaryData = [
   {
     id: 19,
     month: "Sept 14",
-    value: 80,
+    value: 55,
   },
   {
     id: 20,
@@ -108,7 +108,7 @@ export const summaryData = [
   {
     id: 21,
     month: "Sept 16",
-    value: 80,
+    value: 52,
   },
 ];
 

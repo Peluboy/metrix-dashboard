@@ -8,12 +8,15 @@ import { SidebarContext } from "../context/sidebarContext";
 const Sidebar = () => {
   const topLinks = navigationLinks.slice(0, 6);
 
-  // const [activeLinkIdx] = useState(1);
-  // const [sidebarClass, setSidebarClass] = useState("");
-  // const [isSiderbarOpen, setIsSidebarOpen] = useContext(SidebarContext);
+  const [activeLinkIdx, setActiveLinkIdx] = useState(0);
+  const { isSidebarOpen } = useContext(SidebarContext);
+
+  const handleNavLinkClick = (index) => {
+    setActiveLinkIdx(index);
+  };
 
   return (
-    <div className={`sidebar`}>
+    <div className={`sidebar ${isSidebarOpen ? "sidebar-change" : ""}`}>
       <div className="logo">
         <img src={iconsImgs.logo} alt="metrix-logo" className="logo-icon" />
         <h3>Metrix</h3>
@@ -21,13 +24,21 @@ const Sidebar = () => {
       <nav className="navigation">
         <div className="top-links">
           <ul className="nav-list">
-            {topLinks.map((link) => (
+            {topLinks.map((link, index) => (
               <li key={link.id} className={`nav-item`}>
-                <Link to={link.route} className={`nav-link`}>
+                <Link
+                  to={link.route}
+                  className={`nav-link ${
+                    index === activeLinkIdx ? "active" : ""
+                  }`}
+                  onClick={() => handleNavLinkClick(index)}
+                >
                   <img
                     src={link.image}
                     alt={link.title}
-                    className={`nav-link-icon`}
+                    className={`nav-link-icon ${
+                      index === activeLinkIdx ? "active" : ""
+                    }`}
                   />
                   <span className="nav-link-text">{link.title}</span>
                   {link.messageCount && (
@@ -63,7 +74,9 @@ const Sidebar = () => {
                 </div>
                 <span className="upgrade">
                   <p>Upgrade your account</p>
-                  <span class="material-symbols-outlined">chevron_right</span>
+                  <span className="material-symbols-outlined">
+                    chevron_right
+                  </span>
                 </span>
               </Link>
             </div>

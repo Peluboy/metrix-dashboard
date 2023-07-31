@@ -1,0 +1,221 @@
+.card {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-container-top {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: 1fr 1fr 2fr;
+}
+
+.card-container {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  gap: 2rem;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+.card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.card-buttom {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-top .dropdown {
+  position: relative;
+  width: 95px;
+  height: 30px;
+}
+
+.card-top .dropdown::before {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 10px;
+  z-index: 1000;
+  width: 5px;
+  height: 5px;
+  border: 1.5px solid #bec0ca;
+  border-top: 1.5px solid #fff;
+  border-right: 1.5px solid #fff;
+  transform: rotate(-45deg);
+  transition: 0.5s;
+  pointer-events: none;
+}
+
+.card-top .dropdown input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 95px;
+  padding: 5px 10px;
+  height: 30px;
+  outline: none;
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #bec0ca;
+  border: none;
+  border-radius: 8px;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.card-top .dropdown input::placeholder {
+  color: #bec0ca;
+}
+
+.card-top .dropdown .option {
+  position: absolute;
+  border-radius: 8px;
+  top: 45px;
+  width: 105px;
+  background-color: #fff;
+  box-shadow: 0 30px 30px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  display: none;
+}
+
+.card-top .dropdown .option div {
+  padding: 10px;
+  cursor: pointer;
+}
+
+.card-top .dropdown .option div:hover {
+  background-color: var(--primary-clr);
+  color: #fff;
+}
+
+.card-top .dropdown .option.open {
+  display: block;
+}
+
+.card-icon-img {
+  border-radius: 0.5rem;
+  background: rgba(85, 112, 241, 0.12);
+  padding: 10px;
+}
+
+.c1 .card-icon-img {
+  border-radius: 0.5rem;
+  background: rgba(255, 204, 145, 0.16);
+  padding: 10px;
+}
+
+.inventory {
+  background-color: var(--primary-clr);
+}
+
+.inventory .card-icon-img {
+  border-radius: 0.5rem;
+  background: #97a5eb;
+  padding: 10px;
+}
+
+.inventory .card-label,
+.inventory .card-hr {
+  color: #fff;
+}
+
+.inventory .card-hr span {
+  color: #dbdeee;
+}
+
+.card-label {
+  font-size: 0.875rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #8b8d97;
+}
+
+.card-hr {
+  font-size: 1.25rem;
+  font-style: normal;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  line-height: normal;
+  color: #45464e;
+  padding-top: 10px;
+}
+
+.marketting .card-hr {
+  padding-top: 0;
+}
+
+.card-hr span {
+  font-size: 0.75rem;
+  font-style: normal;
+  font-weight: 400;
+  color: #519c66;
+}
+
+.c2 {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  gap: 1rem;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+.card-buttom-marketting {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.card-buttom-marketting-circle {
+  width: 8px;
+  height: 8px;
+  /* background-color: #5570f1; */
+  border-radius: 50%;
+}
+
+.circle-1 {
+  background-color: var(--primary-clr); /* Blue color for Acquisition */
+}
+
+.circle-2 {
+  background-color: #97a5eb; /* Custom color for Purchase */
+}
+
+.circle-3 {
+  background-color: #ffcc91; /* Custom color for Retention */
+}
+
+.cards-2 {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.card-container-bottom {
+  display: grid;
+  gap: 1rem;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.card-container-left {
+  display: grid;
+  grid-template-columns: repeat(1fr);
+  /* flex-direction: column; */
+  gap: 1rem;
+}
+
+.card-marketting {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1rem;
+}

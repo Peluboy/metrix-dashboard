@@ -7,10 +7,10 @@ import { SidebarProvider } from "./context/sidebarContext";
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter>
-      <SidebarProvider>
+    <SidebarProvider>
+      <BrowserRouter>
         <App />
-      </SidebarProvider>
-    </BrowserRouter>
+      </BrowserRouter>
+    </SidebarProvider>
   </React.StrictMode>
 );

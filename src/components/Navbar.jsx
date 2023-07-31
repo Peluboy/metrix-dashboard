@@ -3,6 +3,7 @@ import "../styles/navbar.css";
 import { useLocation } from "react-router-dom";
 import { SidebarContext } from "../context/sidebarContext";
 import { iconsImgs, personsImgs } from "../utils/images";
+import Dropdown from "./Dropdown";
 
 const Navbar = () => {
   const { toggleSidebar } = useContext(SidebarContext);
@@ -12,18 +13,8 @@ const Navbar = () => {
     "Shalewa's shop",
     "Yemi's shop",
   ];
-  const [isDropdownOpen, setIsDropdownOpen] = useState(false);
-  const [selectedOption, setSelectedOption] = useState("");
+
   const [routeTitle, setRouteTitle] = useState("Dashboard");
-
-  const toggleDropdown = () => {
-    setIsDropdownOpen((prevState) => !prevState);
-  };
-
-  const handleOptionClick = (option) => {
-    setSelectedOption(option);
-    setIsDropdownOpen(false);
-  };
 
   const capitalizeFirstLetter = (str) => {
     return str.charAt(0).toUpperCase() + str.slice(1).toLowerCase();
@@ -60,23 +51,7 @@ const Navbar = () => {
           <h4 className="navbar-title">{routeTitle}</h4>
         </div>
         <div className="top-right">
-          <div className="dropdown">
-            <input
-              type="text"
-              className="textBox"
-              placeholder="Nanny's Shop"
-              value={selectedOption}
-              readOnly
-              onClick={toggleDropdown}
-            />
-            <div className={`option ${isDropdownOpen ? "open" : ""}`}>
-              {options.map((option, index) => (
-                <div key={index} onClick={() => handleOptionClick(option)}>
-                  {option}
-                </div>
-              ))}
-            </div>
-          </div>
+          <Dropdown options={options} />
           <img src={iconsImgs.notification} alt="" />
           <img
             src={personsImgs.person_two}

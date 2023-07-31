@@ -1,7 +1,7 @@
 .sidebar {
   /* background-color: var(--secondary-clr); */
   background-color: var(--white-clr);
-  width: 260px;
+  width: 245px;
   padding: 36px 20px;
   transition: var(--transition-default);
 }
@@ -27,7 +27,7 @@
 
 .navigation {
   margin-top: 40px;
-  height: 500px;
+  height: 90%;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;
@@ -78,6 +78,10 @@
 }
 
 .nav-item:hover .nav-link-icon {
+  filter: brightness(100);
+}
+
+.nav-link-icon.active {
   filter: brightness(100);
 }
 
@@ -146,6 +150,10 @@
 @media screen and (max-width: 1400px) {
   .sidebar {
     padding: 24px 16px;
+  }
+
+  .sidebar-change {
+    margin-left: -245px;
   }
 }
 
