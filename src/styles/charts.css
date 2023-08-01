@@ -52,6 +52,10 @@
   background: #fff;
 }
 
+.chat-title {
+  font-size: 0.875rem;
+}
+
 .contact-card-img {
   height: 49px;
   width: 49px;
@@ -96,6 +100,15 @@
   overflow: hidden;
   text-overflow: ellipsis;
   max-width: 86%;
+}
+
+.no-of-orders {
+  font-size: 12px !important;
+}
+
+.card-label {
+  color: var(--primary-30, #b6bfe8);
+  font-size: 13px;
 }
 
 .time {
@@ -143,6 +156,7 @@
 .online-time {
   display: flex;
   gap: 0.7rem;
+  align-items: center;
 }
 
 .conversation-card-right {

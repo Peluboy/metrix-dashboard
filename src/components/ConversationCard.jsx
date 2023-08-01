@@ -13,13 +13,13 @@ const ConversationCard = () => {
             className="contact-card-img"
           />
           <div className="contact-card-content-texts contacts-price">
-            <p>Jane Doe</p>
+            <p className="chat-title">Jane Doe</p>
             <div className="online-time">
               <div className="card-buttom-marketting">
                 <div className="card-buttom-marketting-circle circle-1"></div>
-                <span className="card-label">online</span>
+                <span className="card-label">Online</span>
               </div>
-              <p>12:45 am</p>
+              <p className="no-of-orders">12:45 am</p>
             </div>
           </div>
         </div>
