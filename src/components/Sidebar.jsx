@@ -22,10 +22,12 @@ const Sidebar = () => {
 
   return (
     <div className={`sidebar ${isSidebarOpen ? "sidebar-change" : ""}`}>
-      <div className="logo">
-        <img src={iconsImgs.logo} alt="metrix-logo" className="logo-icon" />
-        <h3>Metrix</h3>
-      </div>
+      <Link to="/">
+        <div className="logo">
+          <img src={iconsImgs.logo} alt="metrix-logo" className="logo-icon" />
+          <h3>Metrix</h3>
+        </div>
+      </Link>
       <nav className="navigation">
         <div className="top-links">
           <ul className="nav-list">

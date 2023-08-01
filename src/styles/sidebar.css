@@ -75,6 +75,10 @@
   color: var(--white-clr);
 }
 
+.gift-link .nav-link:hover {
+  background-color: transparent;
+  color: var(--white-clr);
+}
 .nav-item:hover .nav-link-icon {
   filter: brightness(100);
 }
