@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/dasboard.css";
 import Cards from "../components/Cards";
 
 const Dashboard = () => {
