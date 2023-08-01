@@ -1,8 +1,7 @@
 .sidebar {
-  /* background-color: var(--secondary-clr); */
   background-color: var(--white-clr);
-  width: 245px;
-  padding: 36px 20px;
+  width: 275px;
+  padding: 20px;
   transition: var(--transition-default);
 }
 
@@ -27,7 +26,8 @@
 
 .navigation {
   margin-top: 40px;
-  height: 90%;
+  /* height: 90%; */
+  height: 820px;
   overflow-y: scroll;
   display: flex;
   flex-direction: column;

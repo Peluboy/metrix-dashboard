@@ -17,6 +17,9 @@
   gap: 2rem;
   border-radius: 8px;
   flex-direction: column;
+  max-width: 100%;
+  box-sizing: border-box;
+  overflow: hidden;
 }
 
 .card-top {
@@ -170,6 +173,21 @@
   flex-direction: column;
 }
 
+.c2-marketting {
+  background-color: white;
+  padding: 30px;
+  display: flex;
+  gap: 4rem;
+  border-radius: 8px;
+  flex-direction: column;
+}
+
+.card-marketting-top {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
 .card-buttom-marketting {
   display: flex;
   align-items: center;
@@ -219,3 +237,144 @@
   grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
+
+.orders {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* height: 100%; */
+}
+
+.order-container {
+  max-height: 780px;
+  overflow-y: scroll;
+
+  &::-webkit-scrollbar {
+    width: 4px;
+  }
+
+  &::-webkit-scrollbar-thumb {
+    background-color: var(--white-clr);
+    border-radius: 18px;
+  }
+
+  &::-webkit-scrollbar-track {
+    box-sizing: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    border-radius: 18px;
+  }
+}
+
+.orders-img {
+  height: 49px;
+  width: 49px;
+  border-radius: 6px;
+  object-fit: cover;
+}
+
+.orders-content {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #f1f3f9;
+  padding: 1rem;
+}
+
+.orders-content-left {
+  display: flex;
+  gap: 1rem;
+}
+
+.order-content-texts {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+}
+
+.title-price p:nth-child(1) {
+  color: var(--black-60, #45464e);
+  font-size: 0.875rem;
+}
+
+.title-price p:nth-child(2) {
+  color: var(--black-60, #45464e);
+}
+
+.order-status p:nth-child(1) {
+  color: var(--black-20, #a6a8b1);
+  font-size: 0.75rem;
+}
+
+.date-status p:nth-child(2) {
+  border-radius: 0.5rem;
+  background: rgba(245, 126, 119, 0.12);
+  color: var(--action-red, #cc5f5f);
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+}
+
+.order-status p {
+  border-radius: 0.5rem;
+  text-align: center;
+  padding: 5px 10px;
+  font-size: 0.75rem;
+}
+
+.status-pending p:nth-child(2) {
+  color: #c9b024;
+  background-color: #fcf7e1; /* Red color for Pending status */
+}
+
+.status-completed p:nth-child(2) {
+  color: var(--success-clr); /* Blue color for Completed status */
+  background-color: #e1ffe4; /* Red color for Pending status */
+}
+
+.status-cancelled p:nth-child(2) {
+  color: var(--error-clr); /* Gray color for Cancelled status */
+  background-color: #ffe9e6; /* Red color for Pending status */
+}
+
+@media screen and (max-width: 1200px) {
+  .card-container-top {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .card-container-bottom {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .card-container {
+    width: 98%;
+  }
+  .card-container-top {
+    grid-template-columns: 1fr;
+  }
+
+  .card-container-bottom {
+    grid-template-columns: 1fr;
+  }
+
+  .card-container-left {
+    grid-template-columns: 1fr;
+  }
+
+  .card-marketting {
+    grid-template-columns: 1fr;
+  }
+
+  .card-label {
+    font-size: 0.75rem; /* Reduced font size for card labels */
+  }
+
+  .card-hr {
+    font-size: 1rem; /* Reduced font size for card headings */
+  }
+
+  .card-hr span {
+    font-size: 0.625rem; /* Reduced font size for card subheadings */
+  }
+}
+/* ... Remaining CSS */

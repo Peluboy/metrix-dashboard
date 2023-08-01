@@ -44,6 +44,9 @@
 }
 
 @media screen and (max-width: 768px) {
+  .navbar {
+    padding: 0px 15px 0 0;
+  }
   .navbar-profile-pic {
     display: none;
   }
