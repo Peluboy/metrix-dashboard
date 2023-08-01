@@ -37,6 +37,7 @@ export const contacts = [
     bio: "Hello, I want to make enquiries about your product",
     time: "12:55 am",
     notification: "New",
+    status: "online",
   },
   {
     id: 10,
@@ -45,6 +46,7 @@ export const contacts = [
     bio: "Hello, I want to make enquiries about your product",
     time: "09:10 am",
     notification: "New",
+    status: "away",
   },
   {
     id: 11,
@@ -53,6 +55,7 @@ export const contacts = [
     bio: "Hello, I want to make enquiries about your product",
     time: "15:00 pm",
     notification: "New",
+    status: "online",
   },
   {
     id: 12,
@@ -60,6 +63,7 @@ export const contacts = [
     image: personsImgs.person_four,
     bio: "Hello, I want to make enquiries about your product",
     time: "04:17 am",
+    status: "online",
   },
   {
     id: 13,
@@ -67,6 +71,7 @@ export const contacts = [
     image: personsImgs.person_five,
     bio: "Hello, I want to make enquiries about your product",
     time: "07:35 am",
+    status: "away",
   },
   {
     id: 14,
@@ -74,6 +79,7 @@ export const contacts = [
     image: personsImgs.person_six,
     bio: "Hello, I want to make enquiries about your product",
     time: "07:35 am",
+    status: "away",
   },
 ];
 

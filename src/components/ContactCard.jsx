@@ -4,9 +4,14 @@ import { iconsImgs } from "../utils/images";
 
 const ContactCard = () => {
   const [searchQuery, setSearchQuery] = useState("");
+  const [activeContactId, setActiveContactId] = useState(null);
 
   const handleSearchChange = (event) => {
     setSearchQuery(event.target.value);
+  };
+
+  const handleContactClick = (contactId) => {
+    setActiveContactId(contactId);
   };
 
   const filteredContacts = contacts.filter((contact) =>
@@ -31,36 +36,31 @@ const ContactCard = () => {
         </div>
       </div>
       <div className="contacts-card">
-        {filteredContacts.map((contact, index) => (
-          <ul key={contact.id}>
-            <li>
-              <div
-                className={`contact-card-content ${
-                  index === filteredContacts.length - 1 ? "last-item" : ""
-                }`}
-              >
-                <div className="contact-card-content-left">
-                  <img
-                    src={contact.image}
-                    alt=""
-                    className="contact-card-img"
-                  />
-                  <div className="contact-card-content-texts contacts-price">
-                    <p>{contact.name}</p>
-                    <p>{contact.bio}</p>
-                  </div>
-                </div>
-                <div className="contact-card-content-right">
-                  {contact.notification && (
-                    <div className="contact-card-content-texts contact-notification">
-                      <p>{contact.notification}</p>
-                    </div>
-                  )}
-                  <p className="time">{contact.time}</p>
-                </div>
+        {filteredContacts.map((contact) => (
+          <div
+            key={contact.id}
+            className={`contact-card-content ${
+              contact.id === activeContactId ? "active-contact" : ""
+            }`}
+            onClick={() => handleContactClick(contact.id)}
+          >
+            <div className="contact-card-content-left">
+              <img src={contact.image} alt="" className="contact-card-img" />
+              <div className="contact-card-content-texts contacts-price">
+                <p>{contact.name}</p>
+                <p>{contact.bio}</p>
               </div>
-            </li>
-          </ul>
+            </div>
+            <div className="contact-card-content-right">
+              <div className={`status-circle ${contact.status}`} />{" "}
+              {contact.notification && (
+                <div className="contact-card-content-texts contact-notification">
+                  <p>{contact.notification}</p>
+                </div>
+              )}
+              <p className="time">{contact.time}</p>
+            </div>
+          </div>
         ))}
       </div>
     </div>

@@ -68,6 +68,27 @@
   justify-content: space-between;
   border-bottom: 1px solid #f1f3f9;
   padding: 1rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.status-circle {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  margin-right: 8px;
+  position: absolute;
+  left: 60px;
+  top: 12px;
+  border: 1.5px solid white;
+}
+
+.status-circle.online {
+  background-color: var(--primary-clr);
+}
+
+.status-circle.away {
+  background-color: #c4cae8;
 }
 
 .contact-card-content-left {
@@ -130,6 +151,11 @@
 .contact-card-status p {
   border-radius: 0.5rem;
   font-size: 0.75rem;
+}
+
+.contact-card-content.active-contact {
+  border-right: 3px solid var(--primary-clr);
+  background-color: #f7f7fc;
 }
 
 .search-bar {

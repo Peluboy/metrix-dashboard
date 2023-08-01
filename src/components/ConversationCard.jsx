@@ -8,7 +8,7 @@ const ConversationCard = () => {
       <div className="contact-card-content">
         <div className="contact-card-content-left">
           <img
-            src={personsImgs.person_five}
+            src={personsImgs.person_one}
             alt=""
             className="contact-card-img"
           />
