@@ -1,6 +1,5 @@
 .navbar {
   background-color: var(--white-clr);
-  /* padding: 14px 32px; */
 }
 
 .navbar-top {
@@ -8,7 +7,6 @@
   align-items: center;
   justify-content: space-between;
   border-bottom: 1.5px solid #f1f3f9;
-  /* padding-bottom: 14px; */
   padding: 14px 32px;
 }
 

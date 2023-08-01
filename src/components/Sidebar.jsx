@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React, { useContext, useEffect, useState } from "react";
 import { navigationLinks } from "../data/data";
 import { Link } from "react-router-dom";
 import { iconsImgs } from "../utils/images";
@@ -7,13 +7,18 @@ import { SidebarContext } from "../context/sidebarContext";
 
 const Sidebar = () => {
   const topLinks = navigationLinks.slice(0, 6);
-
-  const [activeLinkIdx, setActiveLinkIdx] = useState(0);
+  const initialActiveLinkIdx =
+    parseInt(localStorage.getItem("activeLinkIdx")) || 0;
+  const [activeLinkIdx, setActiveLinkIdx] = useState(initialActiveLinkIdx);
   const { isSidebarOpen } = useContext(SidebarContext);
 
   const handleNavLinkClick = (index) => {
     setActiveLinkIdx(index);
   };
+
+  useEffect(() => {
+    localStorage.setItem("activeLinkIdx", activeLinkIdx.toString());
+  }, [activeLinkIdx]);
 
   return (
     <div className={`sidebar ${isSidebarOpen ? "sidebar-change" : ""}`}>
@@ -36,6 +41,7 @@ const Sidebar = () => {
                   <img
                     src={link.image}
                     alt={link.title}
+                    title={link.title} // Add title attribute here
                     className={`nav-link-icon ${
                       index === activeLinkIdx ? "active" : ""
                     }`}

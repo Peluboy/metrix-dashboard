@@ -3,13 +3,13 @@
   flex: 1;
   display: flex;
   flex-direction: column;
-  height: 100vh; /* Add display flex to allow the main-content to take remaining height */
+  height: 100vh;
 }
 
 .main-content {
   flex: 1;
   padding: 14px 32px;
-  overflow-y: auto; /* Add overflow-y property to allow scrolling when content overflows */
+  overflow-y: auto;
 }
 
 @media screen and (max-width: 1400px) {

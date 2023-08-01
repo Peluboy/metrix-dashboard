@@ -12,7 +12,6 @@
   position: relative;
   height: 210px;
   width: 210px;
-  /* transform: rotate(-90deg); */
 }
 .percent {
   display: flex;

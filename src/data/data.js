@@ -1,4 +1,4 @@
-import { iconsImgs } from "../utils/images";
+import { iconsImgs, ordersImgs } from "../utils/images";
 import { personsImgs } from "../utils/images";
 
 export const navigationLinks = [
@@ -36,6 +36,7 @@ export const contacts = [
     image: personsImgs.person_one,
     bio: "Hello, I want to make enquiries about your product",
     time: "12:55 am",
+    notification: "New",
   },
   {
     id: 10,
@@ -43,6 +44,7 @@ export const contacts = [
     image: personsImgs.person_two,
     bio: "Hello, I want to make enquiries about your product",
     time: "09:10 am",
+    notification: "New",
   },
   {
     id: 11,
@@ -50,6 +52,7 @@ export const contacts = [
     image: personsImgs.person_three,
     bio: "Hello, I want to make enquiries about your product",
     time: "15:00 pm",
+    notification: "New",
   },
   {
     id: 12,
@@ -116,7 +119,7 @@ export const orderData = [
   {
     id: 22,
     name: "iPhone 13",
-    image: personsImgs.person_five,
+    image: ordersImgs.iphone_12,
     price: "$730,000 x 1",
     date: "12 Sept 2022",
     status: "Pending",
@@ -124,7 +127,8 @@ export const orderData = [
   {
     id: 23,
     name: "iPhone 13",
-    image: personsImgs.person_five,
+    image: ordersImgs.iphone_13,
+
     price: "$730,000 x 1",
     date: "12 Sept 2022",
     status: "Completed",
@@ -132,7 +136,8 @@ export const orderData = [
   {
     id: 24,
     name: "iPhone 13",
-    image: personsImgs.person_five,
+    image: ordersImgs.iphone_12,
+
     price: "$730,000 x 1",
     date: "12 Sept 2022",
     status: "Completed",
@@ -140,7 +145,8 @@ export const orderData = [
   {
     id: 25,
     name: "iPhone 13",
-    image: personsImgs.person_five,
+    image: ordersImgs.iphone_12,
+
     price: "$730,000 x 1",
     date: "12 Sept 2022",
     status: "Cancelled",
@@ -148,7 +154,8 @@ export const orderData = [
   {
     id: 26,
     name: "iPhone 13",
-    image: personsImgs.person_five,
+    image: ordersImgs.iphone_13,
+
     price: "$730,000 x 1",
     date: "12 Sept 2022",
     status: "Completed",
@@ -156,7 +163,8 @@ export const orderData = [
   {
     id: 27,
     name: "iPhone 13",
-    image: personsImgs.person_five,
+    image: ordersImgs.iphone_12,
+
     price: "$730,000 x 1",
     date: "12 Sept 2022",
     status: "Completed",
@@ -164,7 +172,8 @@ export const orderData = [
   {
     id: 28,
     name: "iPhone 13",
-    image: personsImgs.person_five,
+    image: ordersImgs.iphone_12,
+
     price: "$730,000 x 1",
     date: "12 Sept 2022",
     status: "Pending",
@@ -172,41 +181,10 @@ export const orderData = [
   {
     id: 29,
     name: "iPhone 13",
-    image: personsImgs.person_five,
+    image: ordersImgs.iphone_13,
+
     price: "$730,000 x 1",
     date: "12 Sept 2022",
     status: "Completed",
-  },
-];
-
-export const subscriptions = [
-  {
-    id: 24,
-    title: "LinkedIn",
-    due_date: "23/12/04",
-    amount: 20000,
-  },
-  {
-    id: 25,
-    title: "Netflix",
-    due_date: "23/12/10",
-    amount: 5000,
-  },
-  {
-    id: 26,
-    title: "DSTV",
-    due_date: "23/12/22",
-    amount: 2000,
-  },
-];
-
-export const savings = [
-  {
-    id: 27,
-    image: personsImgs.person_one,
-    saving_amount: 250000,
-    title: "Pay kid bro’s fees",
-    date_taken: "23/12/22",
-    amount_left: 40000,
   },
 ];

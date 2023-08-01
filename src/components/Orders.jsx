@@ -11,7 +11,11 @@ const Orders = () => {
         {orderData.map((orders, index) => (
           <ul key={index}>
             <li>
-              <div className="orders-content">
+              <div
+                className={`orders-content ${
+                  index === orderData.length - 1 ? "last-item" : ""
+                }`}
+              >
                 <div className="orders-content-left">
                   <img src={orders.image} alt="" className="orders-img" />
                   <div className="order-content-texts title-price">

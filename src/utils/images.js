@@ -14,6 +14,10 @@ import graph from "../assets/icons/Graph.svg";
 import notification from "../assets/icons/Notification.svg";
 import home from "../assets/icons/Home.svg";
 import menu from "../assets/icons/menu.svg";
+import search from "../assets/icons/Search.svg";
+import smile from "../assets/icons/fi_smile.svg";
+import send from "../assets/icons/Send.svg";
+import plus from "../assets/icons/fi_plus.svg";
 
 // contact images
 import person_one from "../assets/images/person_one.jpg";
@@ -24,10 +28,17 @@ import person_five from "../assets/images/person_five.jpg";
 import person_six from "../assets/images/person_six.jpg";
 import person_seven from "../assets/images/person_seven.jpg";
 
+// order images
+import iphone_12 from "../assets/images/iPhone-12.jpg";
+import iphone_13 from "../assets/images/iPhone-13.jpg";
+
 export const iconsImgs = {
   home,
   bag,
   chat,
+  smile,
+  send,
+  plus,
   gift,
   headphone,
   cart,
@@ -39,6 +50,7 @@ export const iconsImgs = {
   setting,
   category,
   user,
+  search,
   notification,
 };
 
@@ -50,4 +62,9 @@ export const personsImgs = {
   person_five,
   person_six,
   person_seven,
+};
+
+export const ordersImgs = {
+  iphone_12,
+  iphone_13,
 };
