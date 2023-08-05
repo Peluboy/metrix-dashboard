@@ -43,7 +43,7 @@ const Sidebar = () => {
                   <img
                     src={link.image}
                     alt={link.title}
-                    title={link.title} // Add title attribute here
+                    title={link.title}
                     className={`nav-link-icon ${
                       index === activeLinkIdx ? "active" : ""
                     }`}

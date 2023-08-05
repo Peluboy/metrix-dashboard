@@ -102,7 +102,7 @@
   display: block;
 }
 
-.card-icon-img {
+.card-icon-img-sales {
   border-radius: 0.5rem;
   background: rgba(85, 112, 241, 0.12);
   padding: 10px;
@@ -141,6 +141,14 @@
   color: #8b8d97;
 }
 
+.card-label-online {
+  font-size: 0.7rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  color: #b6bfe8;
+}
+
 .card-hr {
   font-size: 1rem;
   font-style: normal;
@@ -174,12 +182,16 @@
 }
 
 .c2-marketting {
-  width: 280px;
+  /* width: 280px; */
   background-color: white;
   padding: 30px;
   display: flex;
   border-radius: 8px;
   flex-direction: column;
+}
+
+.card-buttom-marketting > span {
+  font-size: 11px;
 }
 
 .card-marketting-top {

@@ -18,6 +18,7 @@ import search from "../assets/icons/Search.svg";
 import smile from "../assets/icons/fi_smile.svg";
 import send from "../assets/icons/Send.svg";
 import plus from "../assets/icons/fi_plus.svg";
+import folderWhite from "../assets/icons/Folder-white.svg";
 
 // contact images
 import person_one from "../assets/images/person_one.jpg";
@@ -41,6 +42,7 @@ export const iconsImgs = {
   plus,
   gift,
   headphone,
+  folderWhite,
   cart,
   folder,
   graph,

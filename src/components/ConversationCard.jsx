@@ -17,7 +17,7 @@ const ConversationCard = () => {
             <div className="online-time">
               <div className="card-buttom-marketting">
                 <div className="card-buttom-marketting-circle circle-1"></div>
-                <span className="card-label">Online</span>
+                <span className="card-label-online">Online</span>
               </div>
               <p className="no-of-orders">12:45 am</p>
             </div>
